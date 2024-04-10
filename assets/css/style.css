@@ -13,11 +13,11 @@ h1{
 
 .game-container{
     position: absolute;
-    margin-top: 4rem;
-    margin-left: 50%;
+    top: 4rem;
+    left: 50%;
     transform: translate(-50%);
-    width: 600px;
-    height: 520px;
+    width: 650px;
+    height: 600px;
     background: rgb(87, 168, 255);
     border: 2px solid black;
     padding: 1.5rem;
@@ -34,13 +34,11 @@ h1{
 
 .reset-game{
     position: absolute;
-    top: 32rem;
+    top: 95vh;
     left: 50%;
     transform: translate(-50%);
-    width: 100px;
-    height: 30px;
+    width: 10rem;
     text-align: center;
-    padding: 0.3rem;
     border: 1px solid black;
     cursor: pointer;
 }
