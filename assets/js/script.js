@@ -11,3 +11,15 @@ for(let i = 0; i< slotCell.length; i++) {
         console.log(`${e.target.parentElement.rowIndex}, ${e.target.cellIndex}`);
     })
 }
+
+while(!player1){
+    var player1 = promt('Player One (red counter): Enter your name');
+}
+
+player1Colour = 'red';
+
+while(!player2){
+    var player2 = promt('Player Two (yellow counter): Enter your name');
+}
+
+player2Colour = 'yellow';
