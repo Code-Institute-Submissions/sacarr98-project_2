@@ -48,6 +48,9 @@ function colourChange(e){
             // change colour of cell depending on which player clicked
             if(currentPlayer === 1){
                 row[0].style.backgroundColor = player1Colour;
+                if(checkHorizontal() || checkVertical()){
+                    return(alert('winner'));
+                }
                 playersTurn.textContent = `${player2} make your move!`;
                 return currentPlayer = 2;
             }
@@ -66,8 +69,22 @@ function checkColours(one, two, three, four){
 }
 
 function checkHorizontal(){
-    for(let row = 0; row < slotRow.length; i++){
+    for(let row = 0; row < slotRow.length; row++){
         for(let col = 0; col < 4; col++){
+            if(checkColours(slotRow[row].children[col].style.backgroundColor,
+                slotRow[row].children[col+1].style.backgroundColor,
+                slotRow[row].children[col+2].style.backgroundColor,
+                slotRow[row].children[col+3].style.backgroundColor
+            )){
+                return true;
+            }
+        }
+    }
+}
+
+function checkVertical(){
+    for(let col = 0; col < 7; col++){
+        for(let row = 0; row < 3; row++){
             if(checkColours(slotRow[row].children[col].style.backgroundColor,
                 slotRow[row+1].children[col].style.backgroundColor,
                 slotRow[row+2].children[col].style.backgroundColor,
