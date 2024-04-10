@@ -49,15 +49,29 @@ function colourChange(e){
             if(currentPlayer === 1){
                 row[0].style.backgroundColor = player1Colour;
                 if(checkHorizontal() || checkVertical() || checkDiagonal1() || checkDiagonal2()){
-                    return(alert('winner'));
+                    playersTurn.textContent = `${player1} wins!`;
+                    playersTurn.style.color = player1Colour;
+                    return(alert(`${player1} wins!`));
+                }else if(checkForDraw()){
+                    playersTurn.textContent = 'You have drawn';
+                    return(alert('DRAW'));
+                }else{
+                    playersTurn.textContent = `${player2} make your move!`;
+                    return currentPlayer = 2;
                 }
-                playersTurn.textContent = `${player2} make your move!`;
-                return currentPlayer = 2;
-            }
-            else{
+            }else{
                 row[0].style.backgroundColor = player2Colour;
-                playersTurn.textContent = `${player1} make your move!`;
-                return currentPlayer = 1;
+                if(checkHorizontal() || checkVertical() || checkDiagonal1() || checkDiagonal2()){
+                    playersTurn.textContent = `${player2} wins!`;
+                    playersTurn.style.color = player2Colour;
+                    return(alert(`${player2} wins!`));
+                }else if(checkForDraw()){
+                    playersTurn.textContent = 'You have drawn';
+                    return(alert('DRAW'));
+                }else{
+                    playersTurn.textContent = `${player1} make your move!`;
+                    return currentPlayer = 1;
+                }
             }
         }
     }
@@ -121,5 +135,18 @@ function checkDiagonal2(){
                 return true;
             }
         }
+    }
+}
+
+// check if all cells are not white, if so players have drawn
+function checkForDraw(){
+    let full = [];
+    for(let i = 0; i < slotCell.length; i++){
+        if(slotCell[i].style.backgroundColor !== 'white'){
+            full.push(slotCell[i]);
+        }
+    }
+    if(full.length == slotCell.length){
+        return true;
     }
 }
