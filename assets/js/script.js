@@ -48,6 +48,32 @@ function colourChange(e){
             // change colour of cell depending on which player clicked
             if(currentPlayer === 1){
                 row[0].style.backgroundColor = player1Colour;
+                playersTurn.textContent = `${player2} make your move!`;
+                return currentPlayer = 2;
+            }
+            else{
+                row[0].style.backgroundColor = player2Colour;
+                playersTurn.textContent = `${player1} make your move!`;
+                return currentPlayer = 1;
+            }
+        }
+    }
+}
+
+// check winner
+function checkColours(one, two, three, four){
+    return(one == two && one == three & one == four & one !== 'white');
+}
+
+function checkHorizontal(){
+    for(let row = 0; row < slotRow.length; i++){
+        for(let col = 0; col < 4; col++){
+            if(checkColours(slotRow[row].children[col].style.backgroundColor,
+                slotRow[row+1].children[col].style.backgroundColor,
+                slotRow[row+2].children[col].style.backgroundColor,
+                slotRow[row+3].children[col].style.backgroundColor
+            )){
+                return true;
             }
         }
     }
