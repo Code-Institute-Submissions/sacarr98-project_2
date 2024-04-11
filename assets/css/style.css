@@ -137,6 +137,51 @@
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 700px){
+    .game-container{
+        width: 384px;
+        height: 360px;
+        border: 1.25px solid black;
+        box-shadow: 2.5px 5px #888888;
+        padding: 0.2rem;
+    }
+
+    .game-slot{
+        width: 54px;
+        height: 54px;
+        border: 0.5px solid black;
+    }
+
+    .text-area h1 {
+        font-size: 24px;
+    }
+    .text-area h3 {
+        font-size: 18px;
+    }
+    .text-area h4 {
+        font-size: 12px;
+    }
+
+    .reset-game{
+        top: 78vh;
+        transform: translate(-125%);
+        width: 8.5rem;
+        border: 0.5px solid black;
+    }
+    
+    .reset-game h2{
+        font-size: 20px;
+    }
+
+    .play-again{
+        top: 78vh;
+        transform: translate(25%);
+        width: 8.5rem;
+        border: 0.5px solid black;
+    }
+    
+    .play-again h2{
+        font-size: 20px;
+    }
 
 }
