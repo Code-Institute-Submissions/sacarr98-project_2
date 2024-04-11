@@ -86,3 +86,57 @@
     transition: 0.8s;
     box-shadow: 2px 4px #888888;
 }
+
+/* Media queries */
+
+@media (max-width: 414px){
+    .game-container{
+        width: 325px;
+        height: 300px;
+        border: 1px solid black;
+        box-shadow: 2.5px 5px #888888;
+        padding: 0.2rem;
+    }
+
+    .game-slot{
+        width: 45px;
+        height: 45px;
+        border: 0.5px solid black;
+    }
+
+    .text-area h1 {
+        font-size: 20px;
+    }
+    .text-area h3 {
+        font-size: 15px;
+    }
+    .text-area h4 {
+        font-size: 10px;
+    }
+
+    .reset-game{
+        top: 70vh;
+        transform: translate(-125%);
+        width: 8rem;
+        border: 0.5px solid black;
+    }
+    
+    .reset-game h2{
+        font-size: 18px;
+    }
+
+    .play-again{
+        top: 70vh;
+        transform: translate(25%);
+        width: 8rem;
+        border: 0.5px solid black;
+    }
+    
+    .play-again h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px){
+
+}

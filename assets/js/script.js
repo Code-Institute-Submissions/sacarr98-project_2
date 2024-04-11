@@ -34,7 +34,7 @@ while(!player2){
 player2Colour = 'yellow';
 
 var currentPlayer = 1;
-playersTurn.textContent = `${player1}'s make your move`;
+playersTurn.textContent = `${player1} make your move`;
 player1Score.innerHTML = `${player1}'s score: ${scores.p1score}`;
 player2Score.innerHTML = `${player2}'s score: ${scores.p2score}`;
 
@@ -57,6 +57,7 @@ function colourChange(e){
             // change colour of cell depending on which player clicked
             if(currentPlayer === 1){
                 row[0].style.backgroundColor = player1Colour;
+                // check for win
                 if(checkHorizontal() || checkVertical() || checkDiagonal1() || checkDiagonal2()){
                     playersTurn.textContent = `${player1} wins!`;
                     playersTurn.style.color = player1Colour;
