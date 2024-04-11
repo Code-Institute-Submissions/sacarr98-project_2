@@ -2,7 +2,7 @@
 
 var slotRow = document.getElementsByTagName("tr");
 var slotCell = document.getElementsByTagName("td");
-var tableSlot = document.querySelector(".game-slot");
+var tableSlot = document.querySelectorAll(".game-slot");
 const playersTurn = document.querySelector(".players-turn");
 const resetButton = document.querySelector(".reset-game");
 
@@ -150,3 +150,12 @@ function checkForDraw(){
         return true;
     }
 }
+
+// reset game
+resetButton.addEventListener('click', () => {
+    tableSlot.forEach(slot => {
+        slot.style.backgroundColor = 'white';
+    });
+    playersTurn.style.color = 'black';
+    return (currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`);
+});
