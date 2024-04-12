@@ -7,6 +7,41 @@
     text-align: center;
 }
 
+/* dropdown  menu */
+#nav {
+    line-height: 75px;
+    font-size: 110%;
+    font-weight: bold;
+    letter-spacing: 4px;
+    background-color: white;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .text-area{
     position: absolute;
     width: 100%;
@@ -43,7 +78,7 @@
 
 .reset-game{
     position: absolute;
-    top: 92vh;
+    top: 95vh;
     left: 50%;
     transform: translate(-125%);
     width: 10rem;
@@ -66,7 +101,7 @@
 
 .play-again{
     position: absolute;
-    top: 92vh;
+    top: 95vh;
     left: 50%;
     transform: translate(25%);
     width: 10rem;
