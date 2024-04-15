@@ -1,110 +1,184 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# PORTFOLIO 2 - "Connect 4"
 
-Welcome Sophie Carr,
+Connect 4 is an online game where users can input their own username and play a game of connect 4 with a friend. The game recognises the winner and alerts the users of the winner or if there was a draw. The game keeps score of how many games each user has one, the users can then choose to play again and have a tournament or they can reset the game, re-enter their usernames and return the scores to zero.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The site has a large target audience as connect 4 is a simple to understand game suited to all age groups. The game is easy to use with clear instructions, and clear labels on all buttons.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Below you can see the site on different screen sizes. Taken from [Am I responsive](https://amiresponsive.co.uk/).
+<img src="assets/readme_images/amiresponsive_image.png" alt="News Stories website on different screen sizes" title="News Stories website on different screen sizes>
 
-## Gitpod Reminders
+The live site can be found [here](https://portfolio-four-news-9a11796b1ee3.herokuapp.com/) and [here](https://sacarr98-newsstories-3bi4f6u4rp4.ws-eu110.gitpod.io/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+## CONTENTS
+
+- [PORTFOLIO 2 - "Connect 4"](#portfolio-2---connect-4)
+  - [CONTENTS](#contents)
+  - [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
+      - [First Time Visitor Goals](#first-time-visitor-goals)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [General features on each page](#general-features-on-each-page)
+    - [Future Implementations](#future-implementations)
+    - [Accessibility](#accessibility)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+  - [Deployment \& Local Development](#deployment--local-development)
+    - [Deployment](#deployment)
+    - [Local Development](#local-development)
+      - [How to Fork](#how-to-fork)
+      - [How to Clone](#how-to-clone)
+  - [Testing](#testing)
+  - [Credits](#credits)
+    - [Code Used](#code-used)
+    - [Content](#content)
+    - [ Media](#media)
+    - [ Acknowledgments](#acknowledgments)
+
+---
+
+## User Experience (UX)
+
+### User Stories
+
+#### First Time Visitor Goals
+
+- To easily be able to view news stories of interest
+- To be able to quickly set up a personal profile, adding their name, a photo of themselves and links to their other social media
+- To be able to follow other users and see other profiles
+- To be able to easily navigate between pages
+
+## Design
+
+### Colour Scheme
+
+We wanted to have a colour scheme that was not too bright as users may spend an extended period of time on the site and bright colours can lead to sight fatigue. As the site is primarily about reading news stories we kept the text plain black on a pale background for accessibility and to reduce cognitive overload.
+
+### Typography
+
+A simple sans-serif was used for all the fonts as we felt this was user friendly. It is easy to read, and will load quickly on all devices.
+
+### Imagery
+
+The primary imagery used on the site is uploaded by the users themselves, this includes profile pictures the users choose and pictures included to add value to the news stories. The only pre-uploaded imagery is the default profile picture, that is the image given to new users that have not uploaded their own profile picture yet this can be found [here](https://images.yourstory.com/production/document_image/mystoryimage/uploads/production/app_file/content/7869/e10f46dcca)
+
+### Wireframes
+
+<img src="assets/readme_images/home_page_wireframe.png" alt="Wire fame of home page" title="Home page">
+<img src="assets/readme_images/post_detail_wireframe.png" alt="Wire frame of post detail page" title="Post detail page">
+<img src="assets/readme_images/post_form_page.png" alt="wire frame of create post and sign-up page" title="Create post and sign-up page">
+<img src="assets/readme_images/profile_page_wireframe.png" alt="Wire fame of profile page" title="profile page">
+<img src="assets/readme_images/search_page_wireframe.png" alt="Wire fame of search pages" title="Search pages">
+
+## Features
+
+The website comprised of 9 pages, the 'home' page, the 'create news' page, the 'profile list' page, the 'your profile' page, the 'sign-up' page, two 'search' pages, 'edit-post' page, and the 'post-detail' page.
+
+### General features on each page
+
+All pages have the same nav-bar at the top allowing users to easily navigate through the site, this includes a drop-down 'search' tab allowing users to search by username or post content.
+
+The home page features a list of all the posts (just titles and summaries), ordered by the most recent to oldest. Clicking on the open icon takes users to the post-detail page where they can read full news stories. Cliking on the heart icon likes a news story, and clicking on the bin icon allows users to delete news stories they have written. Clicking on the edit icon redirects users to the 'edit-post' page if the user created that post. On the left handside users can write their own news stories, but this is only visible on large screen sizes to avoid the site being too cluttered and difficult to use on smaller screens.
+
+The create news page was designed primarily for smaller screens where they cannot add posts from the home page, it features a simple form where users write a title, summary, and body for their news story. The edit-post page is very similar to the create news page.
+
+The post-detail page was created as having full news stories displayed on the home page would be overwhelming and make it hard for users to find posts they are interested in. The post detail page features the full news story with a a comment section below where users can read other user comments or add their own comments.
+
+The profile list page features all the user profiles with their profile pictures. This allows users to easily browse through profiles to find their friends and follow them or view their posts. Users can also find profiles using the 'search profiles' search bar.
+
+The profile page, is a page for the users profile. It features a list of all the posts they have made (formatted the same as on the home page) and on the left their profile picture, links to their social media pages, a short bio, and a list of who they follow and who follows them. Users can click on the edit profile button and will be redirected to the sign-up form to make changes to their profile.
+
+The sign-up page follows conventions users will be familiar with, and makes use of hover features on text boxes for easy navigation, with pop-up messages when a section needs to be filled.
+
+<img src="assets/images/subscribe_capture.PNG" alt="screenshot of pop-up messages" title="Sign-up page message">
+
+### Future Implementations
+
+In future I would like users to be able to share other users posts to their profile, if they think stories are of great interest and should reach a larger audience.
+
+### Accessibility
+
+We have actively tried to ensure our website is accessible friendly as possible, we achieved this by:
+- Using semantic HTML
+- Ensuring sufficient colour contrast throughout the site and using easily readable fonts
+- Providing information for screen readers where icons were used in place of text
+
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, Javascript, Python
+
+### Frameworks, Libraries & Programs Used
+
+Git - for version control
+Github - to save and store files 
+Google Fonts - to import all fonts
+Font Awesome - for the iconography
+Google Dev Tools - to troubleshoot and test features
+PostgresSQL - open source database
+Bootstrap - for CSS styling
+Django - for Python
+Cloudinary - for user uploaded images
+Heroku - for deployment
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using Heroku. To Deploy with heroku:
+
+- Log in to Github
+- Duplicate the repository
+- Log in to Heroku and create a new project
+- Select Github as the deployment method and connect to the repository
+- Manually deploy from the main branch
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+- Log in to Github
+- Go to the repository for this project 
+- Click the Fork button in the top right corner
+
+#### How to Clone
+
+To clone the repository:
+- Log in to GitHub
+- Go to the repository for this project
+- Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Testing
+
+Testing documentation can be found [here](TESTING.md)
+
+## Credits
+
+### Code Used
+
+The code was written by myself with some parts being taken from the blog project - for example the comment form. I also used tutorials found on YouTube by CodeMy.
+
+### Content
+
+The sample posts of news stories were taken from bbc news.
+
+###  Media
+
+<a href="https://images.yourstory.com/production/document_image/mystoryimage/uploads/production/app_file/content/7869/e10f46dcca">Default profile picture</a>
+
+  
+###  Acknowledgments
+
+Thanks to the tutors at Code Institute for always being on hand when I needed some help with my code, and to my mentor for their guidence and advice.
