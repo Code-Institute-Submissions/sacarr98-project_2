@@ -31,14 +31,11 @@ I have analysed each page using google chrome developer tools to ensure the resp
 
 ### W3C Validator
 
-[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
+[W3C](https://validator.w3.org/) was used to validate the HTML of the website. It was also used to validate the CSS.
 
 * [index.html](testing/w3/w3-index.png) - Passed, no errors or warnings to show.
-* [mind.html](testing/w3/w3-game.png) - Passed, no errors or warnings to show.
-* [body.html](testing/w3/w3-highscores.png) - Passed, no errors or warnings to show.
-* [soul.html](testing/w3/w3-404.png) - Passed, no errors or warnings to show.
-* [subscribe].html](testing/w3/w3-500.png) - Passed, no errors or warnings to show.
 
+* [style.css](testing/w3/w3-css.png) - Passed, no errors or warnings to show.
 * [style.css](testing/w3/w3-css.png) - Passed, no errors or warnings to show.
 
 ### Lighthouse
@@ -51,13 +48,6 @@ All pages achieved 100 for SEO, a minimum of 92 for best practices, and 93 for a
 
 ![index.html](assets/images/index_lighthouse.PNG)
 
-![mind.html](assets/images/mind_lighthouse.PNG)
-
-![body.html](assets/images/body_lighthouse.PNG)
-
-![soul.html](assets/images/soul_lighthouse.PNG)
-
-![subscribe.html](assets/images/subscribe_lighthouse.PNG)
 
 ## MANUAL TESTING
 

@@ -93,7 +93,7 @@ function colourChange(e){
                     playersTurn.textContent = `${player2} wins!`;
                     playersTurn.style.color = player2Colour;
                     scores.p2score++;
-                    player1Score.innerHTML = `${player2}'s score: ${scores.p2score}`;
+                    player2Score.innerHTML = `${player2}'s score: ${scores.p2score}`;
                     return(alert(`${player2} wins!`));
                 }else if(checkForDraw()){
                     playersTurn.textContent = 'You have drawn';
@@ -200,5 +200,9 @@ playAgain.addEventListener('click', () => {
         slot.style.backgroundColor = 'white';
     });
     playersTurn.style.color = 'black';
-    return (currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`);
+    currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`;
+    scores = {
+        p1score : p1score,
+        p2score : p2score
+    } 
 });
