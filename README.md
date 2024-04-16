@@ -71,7 +71,7 @@ There is no imagery used on the site itself. The game image is created using CSS
 
 ### Wireframes
 
-<img src="assets/readme_images/home_page_wireframe.png" alt="Wire fame of home page" title="Home page">
+<img src="assets/images/connect4_wireframe.png" alt="Wire fame" title="Connect 4 wireframe">
 
 ## Features
 
