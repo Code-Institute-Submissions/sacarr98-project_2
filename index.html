@@ -11,75 +11,83 @@
     <title>Connect 4</title>
 </head>
 <body>
-    <button type="button" class="collapsible">Open Collapsible</button>
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <header>
+        <button type="button" class="collapsible">Open Collapsible</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+    </header>
+    <section>
+        <div class="text-area">
+            <h1>Connect 4</h1>
+            <h3 class="players-turn"></h3>
+            <h4 class="player1-score"></h4><h4 class="player2-score"></h4>
         </div>
-    <div class="text-area">
-        <h1>Connect 4</h1>
-        <h3 class="players-turn"></h3>
-        <h4 class="player1-score"></h4><h4 class="player2-score"></h4>
-    </div>
-    <div class="game-container">
-        <table>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-            <tr>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-                <td class="game-slot"></td>
-            </tr>
-        </table>
-    </div>
-    <div class="reset-game"><h2>Reset Game</h2></div>
-    <div class="play-again"><h2>Play Again</h2></div>
+    </section>
+    <section id="game-area">
+        <div class="game-container">
+            <table>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+                <tr>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                    <td class="game-slot"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="play-buttons">
+        <div class="reset-game"><h2>Reset Game</h2></div>
+        <div class="play-again"><h2>Play Again</h2></div>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
