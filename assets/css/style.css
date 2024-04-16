@@ -106,7 +106,6 @@ header{
 
 .reset-game{
     position: absolute;
-    /*top: 100vh;*/
     left: 50%;
     transform: translate(-125%);
     width: 10rem;
@@ -129,7 +128,6 @@ header{
 
 .play-again{
     position: absolute;
-    /*top: 95vh;*/
     left: 50%;
     transform: translate(25%);
     width: 10rem;
@@ -152,99 +150,113 @@ header{
 
 /* Media queries */
 
-@media (max-width: 414px){
+@media (max-width: 704px){
+
+    /* player area */
+    #players{
+        height: 60px;
+        font-size: 85%;
+    }
+    /* game area styling */
+    #game-area{
+        width: 100%;
+        height: 380px;
+    }
+
     .game-container{
-        width: 325px;
-        height: 300px;
-        border: 1px solid black;
-        box-shadow: 2.5px 5px #888888;
-        padding: 0.2rem;
+        width: 412px;
+        height: 380px;
+        padding: 1rem;
     }
 
     .game-slot{
-        width: 45px;
-        height: 45px;
-        border: 0.5px solid black;
+        width: 55px;
+        height: 55px;
     }
 
-    .text-area h1 {
-        font-size: 20px;
+    /* Button area styling */
+    #play-buttons{
+        margin-top: 20px;
+        height: 40px;
     }
-    .text-area h3 {
-        font-size: 15px;
-    }
-    .text-area h4 {
-        font-size: 10px;
-    }
-
+    
     .reset-game{
-        top: 70vh;
-        transform: translate(-125%);
-        width: 8rem;
-        border: 0.5px solid black;
+        width: 7rem;
     }
     
     .reset-game h2{
-        font-size: 18px;
-    }
-
-    .play-again{
-        top: 70vh;
-        transform: translate(25%);
-        width: 8rem;
-        border: 0.5px solid black;
+        font-size: 85%;
     }
     
+    .play-again{
+        width: 7rem;
+    }
+        
     .play-again h2{
-        font-size: 18px;
+        font-size: 85%;
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 414px){
+    /* Instruction Menu */
+    header{
+        height: 30px;
+    }
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        height: 30px;
+        font-size: 15px;
+    }
+  
+    /* Style the collapsible content*/
+    .content {
+    font-size: 80%;
+    }
+
+    /* player area */
+    #players{
+    height: 50px;
+    font-size: 75%;
+    }
+
+    /* game area styling */
+    #game-area{
+        width: 100%;
+        height: 258px;
+    }
+
     .game-container{
-        width: 384px;
-        height: 360px;
-        border: 1.25px solid black;
-        box-shadow: 2.5px 5px #888888;
-        padding: 0.2rem;
+        width: 280px;
+        height: 258px;
+        padding: 0.8rem;
+        z-index: -1;
     }
 
     .game-slot{
-        width: 54px;
-        height: 54px;
-        border: 0.5px solid black;
+        width: 35px;
+        height: 35px;
     }
 
-    .text-area h1 {
-        font-size: 24px;
+    /* Button area styling */
+    #play-buttons{
+        margin-top: 20px;
+        height: 30px;
     }
-    .text-area h3 {
-        font-size: 18px;
-    }
-    .text-area h4 {
-        font-size: 12px;
-    }
-
+    
     .reset-game{
-        top: 78vh;
-        transform: translate(-125%);
-        width: 8.5rem;
-        border: 0.5px solid black;
+        width: 6.5rem;
     }
     
     .reset-game h2{
-        font-size: 20px;
-    }
-
-    .play-again{
-        top: 78vh;
-        transform: translate(25%);
-        width: 8.5rem;
-        border: 0.5px solid black;
+        font-size: 80%;
     }
     
-    .play-again h2{
-        font-size: 20px;
+    .play-again{
+        width: 6.5rem;
     }
-
+        
+    .play-again h2{
+        font-size: 80%;
+    }
 }
