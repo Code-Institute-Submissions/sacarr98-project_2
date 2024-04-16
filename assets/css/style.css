@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    margin-top: 0.5rem;
     padding: 0;
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
@@ -8,16 +7,20 @@
 }
 
 /* Instruction Menu */
+header{
+    height: 30px;
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 5px;
     width: 100%;
+    height: 30px;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
   }
@@ -47,6 +50,14 @@
     background-color: #f1f1f1;
   }
 
+/* player area */
+#players{
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    height: 105px;
+}
+
 .text-area{
     position: absolute;
     width: 100%;
@@ -61,17 +72,16 @@
 
 /* game area styling */
 #game-area{
-    position: absolute;
-    margin-top: 20px;
+    position: relative;
+    margin-bottom: 0px;
     width: 100%;
-    height: 800px;
+    height: 620px;
 
 }
 
 .game-container{
     position: absolute;
     text-align: center;
-    top: 8.5rem;
     left: 50%;
     transform: translate(-50%);
     width: 650px;
@@ -93,15 +103,16 @@
 
 /* button area styling */
 #play-buttons{
-    position: absolute;
-    margin-top: 20px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 20px;
     height: 50px;
     width: 100%;
 }
 
 .reset-game{
     position: absolute;
-    top: 95vh;
+    /*top: 100vh;*/
     left: 50%;
     transform: translate(-125%);
     width: 10rem;
@@ -124,7 +135,7 @@
 
 .play-again{
     position: absolute;
-    top: 95vh;
+    /*top: 95vh;*/
     left: 50%;
     transform: translate(25%);
     width: 10rem;
