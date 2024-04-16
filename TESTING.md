@@ -101,23 +101,26 @@ Each device tested the site using the following browsers:
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| `Navbar` |
+| `Username Prompt` |
 |  |  |  |  |  |
-| Home Page Link | When clicked the user will be redirected to the home page.| Clicked link | Redirected to the home page. | Pass |
-| Practices Link | When hovered over a drop-down menu appears. | Hovered | Menu appears. | Pass |
-| Mind Link | When clicked the user will be redirected to the mind page. | Clicked link | Redirected to the mind page | Pass |
-| Body Link | When clicked the user will be redirected to the body page. | Clicked link | Redirected to the body page | Pass |
-| Soul Link | When clicked the user will be redirected to the soul page. | Clicked link | Redirected to the soul page | Pass |
-| Subscribe Link | When clicked the user will be redirected to the subscribe page. | Clicked link | Redirected to the subscribe page | Pass |
-| `Footer` |
+| Prompt to enter username | When page loads the users recieve an alert and a prompted to enter a username | Load page | Prompt displayed | Pass |
+| Entered username displays | When name entered it is displayed on the page and a user is prompted to play | Entered name | Name displayed | Pass |
+| `Instructions Collapsible` |
 |  |  |  |  |  |
-| Social media links | When clicked the user will be redirected to relevent social media page. | Clicked all logos | Redirected to the correct pages. | Pass |
-| `Subscribe Page` |
+| Collapsible | When clicked the instructions will drop down in a collapsible element | Clicked bar | Instructions display | Pass |
+| Collapsible | When clicked the instructions will return up in a collapsible element | Clicked bar | Instructions hidden | Pass |
+| `Game play` |
+|  |  |  |  |  |
+| Play counter | When user clicks on a slot the relevent coloured counter appears in that slot | Clicked on slots | Coloured counter matching user appears in slot | Pass |
+| Play prompt | After one user plays text appears prompting the next user to make a move | Played a counter | Text changes to prompt next user to play | Pass |
+| Draw | If all slots are filled with no winner users will be alerted of a draw | Filled all slots without win | Draw alert appears | Pass |
+| Win | If either user gets 4 in a row alert will appear of winner | Played to get 4 in a row in every way possible | Win alert appears | Pass |
+| Win | If either user gets 4 in a row win text appears at top | Played to get 4 in a row in every way possible | Win text appears | Pass |
+| Score counter | when a user wins a game the score will change to reflect their win | Won a game | score display changes | Pass |
+| `Play Buttons` |
 | | | | | | |
-| First and last name input - empty | The username is a required field, so should not submit with no value | Tried to submit form with no value entered | Tooltip lets user know this value is required | Pass |
-| Email input | The email input should include an email address  | Entered plain text | Tooltip tells user to use an email address here | Pass |
-| Email input - empty | The email is a required field, so should not submit with no value | Tried to submit form with no value entered | Tooltip lets user know this value is required | Pass |
-| Join button | Should redirect user to the home page | Created new user and submitted form | Redirected to the home page | Pass |
+| Play again | When a user clicks play again the slots will empty, usernames and score remain the same | clicked play again | Slots clear, username and score remain the same | Pass |
+| Reset | When a user clicks resest the slots will empty, usernames and score clear, and user prompted to enter username | clicked play again | Slots empty, prompted to enter username, score clears | Pass |
 
  - - -
 
@@ -127,13 +130,11 @@ Each device tested the site using the following browsers:
 
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 | The initial banner text was clear on some pages but difficult to read against the background on others | By adding a shadow the text had better readability  |
-| 2 | When adding media queries to my index page the footer was sitting on top of the text content | I realised this was due to the text content being larger than the div container, by resizing the div container I solved this |
-| 3 | Initially when moving through pages on the navigation bar the underline did not move to the relvent page | By ensuring all pages were set to "active" I solved this issue. |
+| 1 | "GET /favicon.ico HTTP/1.1" 404 - error |   |
+
 
 
 ### Solved Bugs
 
 | No | Bug | |
 | :--- | :--- | :--- |
-| 1 | On the soul page the footer seems to jump about, despite it being copied exactly from previous pages, further investigation is needed to solve this issue.| |
