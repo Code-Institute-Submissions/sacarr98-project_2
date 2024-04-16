@@ -6,8 +6,7 @@ var tableSlot = document.querySelectorAll(".game-slot");
 const playersTurn = document.querySelector(".players-turn");
 const resetButton = document.querySelector(".reset-game");
 const playAgain = document.querySelector(".play-again");
-const player1Score = document.querySelector(".player1-score");
-const player2Score = document.querySelector(".player2-score");
+const playerScore = document.querySelector(".player-score");
 let  scores = {
     p1score : 0,
     p2score : 0
@@ -51,8 +50,7 @@ player2Colour = 'yellow';
 
 var currentPlayer = 1;
 playersTurn.textContent = `${player1} make your move`;
-player1Score.innerHTML = `${player1}'s score: ${scores.p1score}`;
-player2Score.innerHTML = `${player2}'s score: ${scores.p2score}`;
+playerScore.innerHTML = `${player1}'s score: ${scores.p1score} | ${player2}'s score: ${scores.p2score}`;
 
 Array.prototype.forEach.call(slotCell, (cell)=>{
     cell.addEventListener('click', colourChange);
@@ -78,7 +76,7 @@ function colourChange(e){
                     playersTurn.textContent = `${player1} wins!`;
                     playersTurn.style.color = player1Colour;
                     scores.p1score++;
-                    player1Score.innerHTML = `${player1}'s score: ${scores.p1score}`;
+                    playerScore.innerHTML = `${player1}'s score: ${scores.p1score} | ${player2}'s score: ${scores.p2score}`;
                     return(alert(`${player1} wins!`));
                 }else if(checkForDraw()){
                     playersTurn.textContent = 'You have drawn';
@@ -93,7 +91,7 @@ function colourChange(e){
                     playersTurn.textContent = `${player2} wins!`;
                     playersTurn.style.color = player2Colour;
                     scores.p2score++;
-                    player1Score.innerHTML = `${player2}'s score: ${scores.p2score}`;
+                    playerScore.innerHTML = `${player1}'s score: ${scores.p1score} | ${player2}'s score: ${scores.p2score}`;
                     return(alert(`${player2} wins!`));
                 }else if(checkForDraw()){
                     playersTurn.textContent = 'You have drawn';
