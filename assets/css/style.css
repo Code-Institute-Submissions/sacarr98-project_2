@@ -8,7 +8,7 @@
 
 /* Instruction Menu */
 header{
-    height: 30px;
+    height: 40px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -18,20 +18,20 @@ header{
     cursor: pointer;
     padding: 5px;
     width: 100%;
-    height: 30px;
+    height: 40px;
     border: none;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on */
   .active, .collapsible:hover {
     background-color: #ccc;
   }
 
   .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: white;
     float: right;
@@ -39,15 +39,20 @@ header{
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796";
   }
   
-  /* Style the collapsible content. Note: hidden by default */
+  /* Style the collapsible content*/
   .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #eee;
+    opacity: 1;
+  }
+
+  .content ul{
+    list-style-type: none;
   }
 
 /* player area */
@@ -55,19 +60,8 @@ header{
     position: relative;
     margin-top: 5px;
     width: 100%;
-    height: 105px;
-}
-
-.text-area{
-    position: absolute;
-    width: 100%;
-    height: 90px;
-    padding: 0.2rem;
-}
-
-.text-area h1{
-    text-align: center;
-    color: black;
+    height: 75px;
+    z-index: -1;
 }
 
 /* game area styling */
