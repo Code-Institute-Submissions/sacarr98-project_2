@@ -5,9 +5,9 @@ Connect 4 is an online game where users can input their own username and play a 
 The site has a large target audience as connect 4 is a simple to understand game suited to all age groups. The game is easy to use with clear instructions, and clear labels on all buttons.
 
 Below you can see the site on different screen sizes. Taken from [Am I responsive](https://amiresponsive.co.uk/).
-<img src="assets/images/amiresponsiveconnect4.png" alt="Connect 4 on different screen sizes" title="Connect4 website on different screen sizes>
+<img src="assets/images/amiresponsiveconnect4.png" alt="Connect 4 on different screen sizes" title="Connect4 website on different screen sizes">
 
-The live site can be found [here](https://8000-sacarr98-project2-gmjtabf2494.ws-eu110.gitpod.io/)
+The live site can be found [here](https://sacarr98.github.io/project_2/)
 
 
 ---
