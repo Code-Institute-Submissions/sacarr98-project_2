@@ -202,7 +202,7 @@ playAgain.addEventListener('click', () => {
     playersTurn.style.color = 'black';
     currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`;
     scores = {
-        p1score : p1score,
-        p2score : p2score
+        p1score : scores.p1score,
+        p2score : scores.p2score
     } 
 });
