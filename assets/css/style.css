@@ -161,9 +161,20 @@ header{
 
 @media (max-width: 704px){
 
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        height: 35px;
+        font-size: 15px;
+    }
+
+    /* Style the collapsible content*/
+    .content {
+        font-size: 75%;
+        }
+
     /* player area */
     #players{
-        height: 60px;
+        height: 105px;
         font-size: 85%;
     }
     /* game area styling */
@@ -220,12 +231,12 @@ header{
   
     /* Style the collapsible content*/
     .content {
-    font-size: 80%;
+    font-size: 68%;
     }
 
     /* player area */
     #players{
-    height: 50px;
+    height: 110px;
     font-size: 75%;
     }
 
@@ -239,7 +250,6 @@ header{
         width: 280px;
         height: 258px;
         padding: 0.8rem;
-        z-index: -1;
     }
 
     .game-slot{
