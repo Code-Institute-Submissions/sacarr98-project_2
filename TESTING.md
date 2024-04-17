@@ -1,6 +1,6 @@
 # CONNECT 4 -  Testing
 
-![Connect 4 shown on a variety of screen sizes](assets/images/the-quiz-arms.png)
+![Connect 4 shown on a variety of screen sizes](assets/images/amiresponsiveconnect4.png)
 
 Visit the deployed site: [Connect 4](https://kera-cudmore.github.io/TheQuizArms/)
 
