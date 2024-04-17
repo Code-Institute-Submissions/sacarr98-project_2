@@ -144,7 +144,8 @@ Testing documentation can be found [here](TESTING.md)
 
 ### Code Used
 
-The code was written by myself with some parts being taken from the love maths project.
+The code was written by myself with some parts being taken from the love maths project. Some code was also taken from a youtube tutorial by Conor Bailer (on GitHub as conorbailey90). Code for the collapsible element was also taken from comments on a reddit thread.
+
 ### Content
 
 All content, including the game instructions was written by myself.
