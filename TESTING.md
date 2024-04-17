@@ -33,9 +33,8 @@ I have analysed each page using google chrome developer tools to ensure the resp
 
 [W3C](https://validator.w3.org/) was used to validate the HTML of the website. It was also used to validate the CSS.
 
-* [index.html](testing/w3/w3-index.png) - Passed, no errors or warnings to show.
+* [index.html] - Passed, no errors, warnings concerning empty headers, however these are a result of sections that will be filled with Javascript code
 
-* [style.css](testing/w3/w3-css.png) - Passed, no errors or warnings to show.
 * [style.css](testing/w3/w3-css.png) - Passed, no errors or warnings to show.
 
 ### Lighthouse
@@ -44,9 +43,17 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Results
 
-All pages achieved 100 for SEO, a minimum of 92 for best practices, and 93 for accessibility. The scores for performance however were quite low, this was due to the image formats I used. This will effect the load time of the site, in future I will use alternative formatting for my images to ensure better performance.
+An overall score of 95 was achieved with 100 for best practices and accesibility.
 
-![index.html](assets/images/index_lighthouse.PNG)
+![index.html](assets/images/lighthouse_connect4.png)
+
+### Javascript Testing
+
+The Javascript code was passed through JShint.
+
+### Results
+
+No significant issues or warnings.
 
 
 ## MANUAL TESTING

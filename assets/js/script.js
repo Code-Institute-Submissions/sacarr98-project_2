@@ -11,7 +11,7 @@ const player2Score = document.querySelector(".player2-score");
 let  scores = {
     p1score : 0,
     p2score : 0
-} 
+};
 
 // Collapsible instructions
 var coll = document.getElementsByClassName("collapsible");
@@ -58,7 +58,7 @@ Array.prototype.forEach.call(slotCell, (cell)=>{
     cell.addEventListener('click', colourChange);
     // ensure background colour is white (empty cell)
     cell.style.backgroundColor = 'white';
-})
+});
 
 // change colour of cell clicked by player
 function colourChange(e){
@@ -179,7 +179,7 @@ function checkForDraw(){
     if(full.length == slotCell.length){
         return true;
     }
-}
+};
 
 // reset game
 resetButton.addEventListener('click', () => {
@@ -190,7 +190,7 @@ resetButton.addEventListener('click', () => {
     scores = {
         p1score : 0,
         p2score : 0
-    } 
+    }; 
     return (currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`);
 });
 
@@ -200,9 +200,9 @@ playAgain.addEventListener('click', () => {
         slot.style.backgroundColor = 'white';
     });
     playersTurn.style.color = 'black';
-    currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`;
     scores = {
         p1score : scores.p1score,
         p2score : scores.p2score
-    } 
+    };
+    return(currentPlayer == 1 ? playersTurn.textContent = `${player1} make your move` : playersTurn.textContent = `${player2} make your move`);
 });
